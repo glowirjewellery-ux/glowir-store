@@ -35,7 +35,7 @@
     }
 
     h1 {
-      font-family: 'The Seasons', serif;
+      font-family: 'The Seasons', serif; /* nouvelle police */
       font-size: 3.5em;
       font-weight: 600;
       margin: 0;
@@ -92,45 +92,16 @@
       color: white;
     }
 
-    /* ✅ Ajustements pour mobile */
     @media (max-width: 768px) {
       .wrapper {
-        flex-direction: row; /* Reste sur la même ligne */
-        align-items: center;
-        justify-content: center;
-        text-align: left;
+        flex-direction: column-reverse;
+        text-align: center;
       }
-
-      .content {
-        text-align: left;
-      }
-
       .logo {
-        width: 180px; /* Taille adaptée pour mobile */
-        margin-left: 30px;
-        top: -10px; /* Ajuste la hauteur */
-      }
-
-      h1 {
-        font-size: 2.2em; /* Réduction douce pour mobile */
-      }
-
-      p {
-        font-size: 1em;
-      }
-
-      .btn {
-        padding: 10px 28px;
-        font-size: 0.9em;
-      }
-
-      .socials {
-        margin-top: 25px;
-        gap: 15px;
-      }
-
-      .socials a {
-        font-size: 22px;
+        width: 150px;
+        margin: 25px 0 0;
+        transform: none;
+        top: 0;
       }
     }
   </style>
