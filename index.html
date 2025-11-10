@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Glowir Store</title>
+
+  <!-- Police + icônes -->
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background-color: #0e2f2b; /* Vert Glowir */
+      color: #d4af37; /* Doré */
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+
+    .wrapper {
+      display: flex;
+      align-items: center; /* Aligne verticalement le texte et le logo */
+      justify-content: space-between;
+      width: 80%;
+      max-width: 1200px;
+    }
+
+    .content {
+      flex: 1;
+    }
+
+    h1 {
+      font-size: 3em;
+      font-weight: 600;
+      margin: 0;
+      color: #d4af37;
+    }
+
+    p {
+      font-size: 1.2em;
+      margin-top: 10px;
+      margin-bottom: 25px;
+      color: #d4af37;
+    }
+
+    .btn {
+      background-color: transparent;
+      border: 2px solid #d4af37;
+      color: #d4af37;
+      padding: 12px 34px;
+      text-decoration: none;
+      border-radius: 4px;
+      font-weight: 500;
+      transition: all 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #d4af37;
+      color: #0e2f2b;
+    }
+
+    .logo {
+      width: 260px;
+      height: auto;
+      border-radius: 10px;
+      display: block;
+      margin-left: 60px;
+      transform: translateY(20px); /* ajuste la hauteur pour aligner le centre avec le texte */
+    }
+
+    .socials {
+      margin-top: 40px;
+      display: flex;
+      gap: 20px;
+    }
+
+    .socials a {
+      color: #d4af37;
+      font-size: 26px;
+      transition: color 0.3s ease;
+    }
+
+    .socials a:hover {
+      color: white;
+    }
+
+    @media (max-width: 768px) {
+      .wrapper {
+        flex-direction: column-reverse;
+        text-align: center;
+      }
+      .logo {
+        width: 150px;
+        margin: 25px 0 0;
+        transform: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wrapper">
+    <div class="content">
+      <h1>Glowir Store</h1>
+      <p>Bijoux en acier inoxydable – premium quality</p>
+      <a href="#" class="btn">SHOP NOW</a>
+      <div class="socials">
+        <a href="https://www.instagram.com/glowir.jewellery" target="_blank"><i class="fab fa-instagram"></i></a>
+        <a href="https://www.facebook.com/profile.php?id=61578777644089" target="_blank"><i class="fab fa-facebook-f"></i></a>
+        <a href="https://wa.me/212636370737" target="_blank"><i class="fab fa-whatsapp"></i></a>
+      </div>
+    </div>
+    <img src="logo.png" alt="Logo Glowir" class="logo">
+  </div>
+</body>
+</html>
